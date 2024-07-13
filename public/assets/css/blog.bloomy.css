@@ -1,0 +1,25 @@
+body {
+    background-color: var(#f7f7f7);
+    min-width: 300px;
+  }
+.jumbotron {
+    background-image: url("../images/backgrounds/img-jumbotron.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+.jumbotron .container {
+    padding: 2rem;
+    height: 269.41px;
+}
+.blog-judul {
+    text-align: center;
+}
+.horizontal-line-1 {
+    border-top: 2px solid black;
+    width: 15%;
+    /* Atau Anda bisa menyesuaikan lebar sesuai kebutuhan, misalnya 50% */
+    margin: 25px 42.5% 60px;
+    /* Jarak atas dan bawah */
+}

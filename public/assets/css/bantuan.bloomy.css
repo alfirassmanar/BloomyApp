@@ -1,0 +1,28 @@
+body {
+    background-color: var(#f7f7f7);
+    min-width: 300px;
+}
+.h {
+    text-align: center;
+    margin-top: 2rem;
+}
+.image {
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.horizontal-line {
+    border-top: 2px solid black;
+    width: 40%;
+    /* Atau Anda bisa menyesuaikan lebar sesuai kebutuhan, misalnya 50% */
+    margin: 45px 30% 60px;
+    /* Jarak atas dan bawah */
+}
+.text {
+    margin-left: 19%;
+    margin-right: 19%;
+    font-size: 1.1rem;
+}
+a {
+    text-decoration: none !important;
+}
