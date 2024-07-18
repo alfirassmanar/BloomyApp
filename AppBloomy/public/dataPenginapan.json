@@ -1,0 +1,92 @@
+[
+    {
+        "nama": "The Sun Hotel Sidoarjo",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "we did experience great servise and help on any request made. food and drinks were great expecially breakfast great variety, good location off the main road best advise is to book this hotel if you visit sidoarjo.",
+        "rating": 8.2,
+        "ulasan": 1048,
+        "harga_malam": "Rp 436,320",
+        "fasilitas": ["Valet parking", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "favehotel Sidoarjo",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "However, please pay attention to the bedsheet and the cleanliness of the room. I found some dirty spot in my bedsheet once i arrived and \"used\" panty liners above the small cupboard near the shower.",
+        "rating": 9.2,
+        "ulasan": 157,
+        "harga_malam": "Rp 694,814",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "ZESTER Hotel Sidoarjo",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "good",
+        "rating": 7.9,
+        "ulasan": 158,
+        "harga_malam": "Rp 239,250",
+        "fasilitas": ["Airport transfer", "Car park"]
+    },
+    {
+        "nama": "Luminor Hotel Airport Sidoarjo by WH",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "good",
+        "rating": 8.9,
+        "ulasan": 569,
+        "harga_malam": "Rp 785,032",
+        "fasilitas": ["Valet parking", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "Homestay MM Syariah RedPartner",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "",
+        "rating": 8.9,
+        "ulasan": 38,
+        "harga_malam": "Rp 113,081",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "SUPER OYO 3862 Syariah Hotel Pandan Wangi",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "",
+        "rating": 7.6,
+        "ulasan": 202,
+        "harga_malam": "Rp 137,822",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "Super OYO 2509 Hotel Tebel 19",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "",
+        "rating": 7.7,
+        "ulasan": 364,
+        "harga_malam": "Rp 133,514",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "Delta Sinar Mayang Hotel",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "I really don't have other option when i'm searching for a hotel in Sidoarjo with a budget for under IDR 400.000 / night. So, basically, this is the only option. The hotel is no good neither for the breakfast. But at least we can easily search for various hawker street food stalls just around the hotel.",
+        "rating": 7,
+        "ulasan": 235,
+        "harga_malam": "Rp 271,623",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "Chiaro Hotel Syariah",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "Recommended budget hotel",
+        "rating": 8.4,
+        "ulasan": 78,
+        "harga_malam": "Rp 221,894",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    },
+    {
+        "nama": "RedDoorz Syariah near Suncity Mall Sidoarjo",
+        "lokasi": "Sidoarjo, Sidoarjo",
+        "deskripsi": "",
+        "rating": 8.5,
+        "ulasan": 90,
+        "harga_malam": "Rp 160,758",
+        "fasilitas": ["Car park", "Free Wi-Fi in all rooms"]
+    }
+]

@@ -105,6 +105,19 @@ return [
         ),
     ],
 
+    'pdf' => [
+        'enabled' => true,
+        'binary'  => '/usr/local/bin/wkhtmltopdf',
+        'timeout' => false,
+        'options' => [],
+        'env'     => [],
+    ],
+
+    'aliases' => [
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+    ],
+
+
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver

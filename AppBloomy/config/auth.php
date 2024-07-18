@@ -39,6 +39,11 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+            'expire' => null, // Atur expire menjadi null
+            'throttle' => [
+                'enabled' => true,
+                'decay' => 60,
+            ],
         ],
     ],
 

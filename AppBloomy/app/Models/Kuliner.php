@@ -26,4 +26,8 @@ class Kuliner extends Authenticatable
         'tgl_input',
         'lokasi',
     ];
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class, 'id_kategori');
+    }
 }

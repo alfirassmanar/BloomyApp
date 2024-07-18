@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $data['title'] }}</title>
+    <link rel="icon" type="image/png" href="/assets/Clarion.jpeg">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
@@ -50,7 +52,7 @@
         font-size: 28px;
     }
 
-    input[type="text"],
+    input[type="email"],
     input[type="password"] {
         display: block;
         box-sizing: border-box;
@@ -179,19 +181,22 @@
 
 <body>
     <div id="login-box">
-        <form action="">
+        <form id="login_form">
             <div class="left">
                 <h1>Log In</h1>
-                <input type="text" name="email" placeholder="E-mail" />
-                <input type="password" name="password" placeholder="Password" />
-
+                @csrf
+                <input type="email" name="email" placeholder="E-mail" required />
+                <input type="password" name="password" placeholder="Password" required />
                 <input type="submit" name="submit" value="Log In me" />
             </div>
         </form>
+
         <div class="right">
             <span class="loginwith">Sign in with<br />social network</span>
 
-            <button class="social-signin google">Log in with Google+</button>
+            <a href="{{ url('/auth/google') }}">
+                <button class="social-signin google">Log in with Google+</button>
+            </a>
             <a href="{{ route('registrasi.admin.bloomy') }}">
                 <button class="social-signin user">Don't Have Account?</button>
             </a>
@@ -199,5 +204,36 @@
         <div class="or">OR</div>
     </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $('#login_form').on('submit', function(e) {
+            e.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                url: "{{ route('prosesLogin.admin.bloomy') }}",
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    if (response.success) {
+                        window.location.href = "{{ route('dashboard.bloomy') }}";
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
 
 </html>

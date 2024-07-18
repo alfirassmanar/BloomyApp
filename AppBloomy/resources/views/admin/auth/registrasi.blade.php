@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/assets/Clarion.jpeg">
     <title>{{ $data['title'] }}</title>
 </head>
 <style>
@@ -179,18 +180,20 @@
 
 <body>
     <div id="login-box">
-        <form action="#" method="POST">
+        <form id="signup_form" action="{{ route('registrasi.admin.bloomy') }}" method="POST">
+            @csrf <!-- Tambahkan CSRF token -->
             <div class="left">
                 <h1>Sign up</h1>
                 <input type="text" name="username" placeholder="Username" />
-                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password 6 Karakter" />
                 <input type="text" name="email" placeholder="E-mail" />
                 <input type="text" name="nama_lengkap" placeholder="Name" />
                 <input type="file" name="foto" placeholder="Photo" />
-
-                <input type="submit" name="signup_submit" value="Sign me up" />
+                <!-- Hapus atribut name dari tombol submit -->
+                <input type="submit" value="Sign me up" />
             </div>
         </form>
+
 
         <div class="right">
             <span class="loginwith">Sign in with<br />social network</span>
@@ -205,5 +208,31 @@
         <div class="or">OR</div>
     </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('form').on('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                url: "{{ route('prosesRegistrasi.admin.bloomy') }}",
+                type: 'POST',
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    console.log(data);
+                    window.location.reload();
+                },
+                error: function(xhr, status, error) {
+                    console.log(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
 
 </html>

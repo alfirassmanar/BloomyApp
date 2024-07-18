@@ -17,13 +17,32 @@ class Transaksi extends Authenticatable
     protected $primaryKey = 'id_transaksi';
     public $timestamps = false;
 
-    // protected $fillable = [
-    //     'nama_umkm',
-    //     'kategori',
-    //     'keterangan',
-    //     'foto_usaha',
-    //     'tgl_berdiri',
-    //     'tgl_input',
-    //     'lokasi',
-    // ];
+    protected $fillable = [
+        'id_user',
+        'id_tour',
+        'no_tiket',
+        'jumlah_pesanan',
+        'total_bayar',
+        'tgl_pesan',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id_user');
+    }
+
+    public function tour()
+    {
+        return $this->belongsTo(Tour::class, 'id_tour');
+    }
+
+    public function wisata()
+    {
+        return $this->belongsTo(Wisata::class, 'id_wisata');
+    }
+
+    public function pekerja()
+    {
+        return $this->belongsTo(Pekerja::class, 'id_pekerja');
+    }
 }

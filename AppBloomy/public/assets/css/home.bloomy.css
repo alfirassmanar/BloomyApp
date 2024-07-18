@@ -1,0 +1,207 @@
+:root {
+    --secondary: #10439f;
+    --white-primary: #ffffff;
+    --white-secondary: #ffffff;
+    /* Ubah ke warna putih */
+}
+body {
+    background-color: var(#f7f7f7);
+    min-width: 300px;
+}
+.navbar-nav {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    padding: 0;
+    margin: 0 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: black;
+}
+
+footer {
+    background-color: var(--secondary);
+    color: var(--white-primary);
+    padding-bottom: 12px;
+}
+
+footer h6 {
+    color: var(--white-primary);
+}
+
+footer h4 a {
+    color: var(--white-primary);
+}
+
+footer p,
+footer li,
+footer svg {
+    color: var(--white-secondary);
+}
+
+footer p b {
+    color: var(--white-primary);
+}
+
+footer .container.footer-content svg {
+    height: 24px;
+}
+
+footer .container.footer-content {
+    padding: 45px 0;
+}
+
+#daftar,
+#masuk {
+    padding: 0;
+    background-color: var(--secondary);
+    min-height: 100vh;
+}
+
+#daftar svg,
+#masuk svg {
+    height: 20px;
+}
+
+#daftar .container,
+#masuk .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.card1 {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* Mengatur sudut melengkung */
+}
+
+.card2 {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /* Mengatur sudut melengkung */
+    background-color: #10439f;
+    margin-top: 50px;
+}
+
+.judul1 {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.judul2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 1%;
+}
+
+.card-title-judul1 {
+    color: #ffffff;
+    margin-left: 12%;
+}
+
+.card-title-judul2 {
+    color: #ffffff;
+    margin-left: 12%;
+}
+
+.card-text-text1 {
+    color: #ffffff;
+    margin-left: 12%;
+    font-size: 1.3rem;
+}
+
+.horizontal-line {
+    border-top: 2px solid black;
+    width: 40%;
+    /* Atau Anda bisa menyesuaikan lebar sesuai kebutuhan, misalnya 50% */
+    margin: 45px 30% 60px;
+    /* Jarak atas dan bawah */
+}
+
+.custom-rounded {
+    border-radius: 15px;
+    /* Atur sesuai keinginan Anda */
+}
+
+.card-title-footer1 {
+    text-align: center;
+    margin-top: 11%;
+}
+.card-title-footer {
+    text-align: center;
+}
+.card-text-footer {
+    text-align: center;
+    font-size: 1.1rem;
+}
+/* .img-group {
+    margin-left: 15%;
+} */
+.card-text-foot1 {
+    color: #ffffff;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-title-foot2 {
+    color: #ffffff;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.aini {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0 0 40px;
+    margin-bottom: 1%;
+}
+/* coba1 */
+.jumbotron-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #10439f;
+    padding: 2rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.jumbotron-custom img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+.jumbotron-custom .content {
+    max-width: 60%;
+}
+.img-logo {
+    height: 1.2rem;
+    width: 12rem;
+}
+.content {
+    padding: 20px;
+}
+.content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.price {
+    font-size: 20px;
+    color: #d9534f;
+    margin-top: 20px;
+}

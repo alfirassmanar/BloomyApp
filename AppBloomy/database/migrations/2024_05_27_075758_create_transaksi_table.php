@@ -11,13 +11,10 @@ return new class extends Migration
     {
         Schema::create('tb_transaksi', function (Blueprint $table) {
             $table->id('id_transaksi');
-            // $table->string('nama_umkm');
-            // $table->string('kategori');
-            // $table->text('keterangan');
-            // $table->string('foto_usaha')->nullable();
-            // $table->date('tgl_berdiri');
-            // $table->date('tgl_input');
-            // $table->string('lokasi');
+            $table->string('id_user');
+            $table->string('id_tour');
+            $table->string('no_tiket');
+            $table->date('tgl_pesan');
         });
     }
 

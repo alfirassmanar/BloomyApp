@@ -1,0 +1,81 @@
+.container-reg {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-container,
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #0069d9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.header {
+    background-color: #232f6b;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.price {
+    font-size: 20px;
+    color: #d9534f;
+    margin-top: 20px;
+    text-align: center;
+}

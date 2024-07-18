@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('email')->unique();
             $table->string('nama_lengkap');
-            $table->string('izin_akses');
+            $table->string('id_role');
             $table->string('foto')->nullable();
         });
 

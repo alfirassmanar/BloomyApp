@@ -26,4 +26,19 @@ class Wisata extends Authenticatable
         'tgl_input',
         'lokasi',
     ];
+
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class, 'id_kategori');
+    }
+
+    public function pekerja()
+    {
+        return $this->belongsTo(Pekerja::class, 'id_pekerja');
+    }
+
+    public function tour()
+    {
+        return $this->hasMany(Tour::class, 'id_wisata', 'id_wisata');
+    }
 }

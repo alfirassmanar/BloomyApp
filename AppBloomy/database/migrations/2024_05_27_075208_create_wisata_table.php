@@ -11,8 +11,8 @@ return new class extends Migration
     {
         Schema::create('tb_wisata', function (Blueprint $table) {
             $table->id('id_wisata');
+            $table->id('id_kategori');
             $table->string('nama_wisata');
-            $table->string('kategori');
             $table->text('keterangan');
             $table->string('foto_usaha')->nullable();
             $table->date('tgl_berdiri');
