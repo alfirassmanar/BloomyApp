@@ -8,6 +8,8 @@
     <title>{{ $data['title'] }}</title>
     <link rel="icon" type="image/png" href="/assets/Clarion.jpeg">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="dicoding:email" content="d2024y030@dicoding.org">
+
 </head>
 <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);

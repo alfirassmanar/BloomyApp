@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="/assets/Clarion.jpeg">
     <title>{{ $data['title'] }}</title>
+    <meta name="dicoding:email" content="d2024y030@dicoding.org">
+
 </head>
 <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
